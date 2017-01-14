@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/hw.atom.xml" rel="self"></link><id>./</id><updated>2016-10-06T11:00:00+08:00</updated><entry><title>01/22電腦輔助設計課程總結</title><link href="./0122dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./0122dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;</summary><category term="日常"></category></entry><entry><title>10/27四連桿</title><link href="./1027si-lian-gan.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423132</name></author><id>tag:,2016-10-06:./1027si-lian-gan.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;p&gt;&lt;img src="./../data/四連桿追蹤.jpg"width="800"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="./../w7/四連桿追蹤.jpg"width="800"/&gt;&lt;/p&gt;
 &lt;p&gt;Solvespace 四連桿圖&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="./../w7/四連桿追蹤.slvs"&gt; 四連桿.csv&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="./../w7/四連桿路徑.csv"&gt;/四連桿.slvs&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;</summary><category term="作業"></category></entry><entry><title>11/17 四連桿路徑與Brython</title><link href="./1117-si-lian-gan-lu-jing-yu-brython.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1117-si-lian-gan-lu-jing-yu-brython.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;p&gt;&lt;img src="./../data/四連桿追蹤.jpg"width="800"/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="./../data/路徑表.jpg"width="800"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="./../w7/四連桿追蹤.jpg"width="800"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="./../w7/路徑表.jpg"width="800"/&gt;&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;&lt;/script&gt;
