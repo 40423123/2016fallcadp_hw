@@ -10,13 +10,11 @@
 
 &lt;p&gt;&lt;img src="./../data/四連桿追蹤.jpg"width="800"/&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="./../data/路徑表.jpg"width="800"/&gt;&lt;/p&gt;
-&lt;!-- 導入 Brython 標準程式庫 --&gt;
+&lt;!-- 導入 brython.js --&gt;
 
-&lt;script type="text/javascript" 
-    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt;
+&lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;&lt;/script&gt;
 
-&lt;!-- 啟動 Brython --&gt;
+&lt;!-- 啟動 brython() --&gt;
 
 &lt;script&gt;
 window.onload=function(){
@@ -24,7 +22,7 @@ brython(1);
 }
 &lt;/script&gt;
 
-&lt;!-- 以下實際利用  Brython 畫兩條直線 --&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
 
 &lt;canvas id="fourbar" width="600" height="600"&gt;&lt;/canvas&gt;
 
