@@ -1,5 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-10-06T11:00:00+08:00</updated><entry><title>01/22電腦輔助設計課程總結</title><link href="./0122dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./0122dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;</summary><category term="日常"></category></entry><entry><title>10/27四連桿</title><link href="./1027si-lian-gan.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423132</name></author><id>tag:,2016-10-06:./1027si-lian-gan.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-10-06T11:00:00+08:00</updated><entry><title>01/22電腦輔助設計課程總結</title><link href="./0122dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./0122dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h3&gt;上課筆記&lt;/h3&gt;
+&lt;p&gt;1.下載mini2016fall.7z工具&lt;/p&gt;
+
+&lt;p&gt;2.到mdecourse的2016fallCADP點擊fork&lt;/p&gt;
+
+&lt;p&gt;3.建立自己的作業倉儲，組長還須建立2016fallcadp_ag8倉儲&lt;/p&gt;
+
+&lt;p&gt;4.在倉儲建立gh-pages分支&lt;/p&gt;
+
+&lt;p&gt;5.將組別倉儲clone下來，切換到gh-pages分支&lt;/p&gt;
+
+&lt;p&gt;6.使用git submodule add -b gh-pages 指令將組員的作業倉儲加入子模組&lt;/p&gt;
+
+&lt;p&gt;7.每周定時使用
+
+(1) git submodule init
+
+(2)git submodule update和
+
+(3)git submodule foreach "(git checkout gh-pages; git pull)&amp;"來更新&lt;/p&gt;
+
+&lt;p&gt;8.設定shareX的儲存位置
+
+(1)Application settings
+
+(2)path選擇想儲存的位置即可&lt;/p&gt;
+
+&lt;p&gt;9.使用solvespace練習繪製零件&lt;/p&gt;
+
+&lt;h3&gt;零件繪製作業&lt;/h3&gt;
+&lt;iframe src="https://player.vimeo.com/video/190852426" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/190852426"&gt;2016-11-09 19-44-34&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h3&gt;四連桿&lt;/h3&gt;
+&lt;p&gt;&lt;img src="./../w7/四連桿追蹤.jpg"width="800"/&gt;&lt;/p&gt;
+&lt;p&gt;Solvespace 四連桿圖&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="./../w7/四連桿追蹤.slvs"&gt; 四連桿.csv&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="./../w7/四連桿路徑.csv"&gt;/四連桿.slvs&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;
+
+&lt;h3&gt;四連桿路徑&lt;/h3&gt;
+&lt;p&gt;&lt;img src="./../w7/四連桿追蹤.jpg"width="800"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="./../w7/路徑表.jpg"width="800"/&gt;&lt;/p&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="fourbar" width="600" height="600"&gt;&lt;/canvas&gt;
+
+&lt;div id="container1"&gt;&lt;/div&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar"]
+container1 = doc['container1']
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../w7/四連桿路徑.csv").read()
+fourbar_list = fourbar_data.splitlines()
+#container1 &lt;= fourbar_list[0]
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 8 倍
+ratio = 8
+'''
+ctx.moveTo(0, 0)
+ctx.lineTo(0, 100)
+ctx.moveTo(0, 0)
+ctx.lineTo(100, 0)
+'''
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;h3&gt;solvespace軟體練習&lt;/h3&gt;
+&lt;p&gt;Extrude (平行長出)&lt;/p&gt;
+&lt;iframe src="./../data/2323-1.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Extrude (除料)&lt;/p&gt;
+&lt;iframe src="./../data/2323-2.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Lathe (旋轉繞行長出或除料)&lt;/p&gt;
+&lt;iframe src="./../data/甜甜圈.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199431202" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199431202"&gt;Untitled&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199431219" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199431219"&gt;Untitled&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199431216" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199431216"&gt;Untitled&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Assembly (零件組立)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src="./../data/箱子組立.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199429872" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/199429872"&gt;-2&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/199429860" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/199429860"&gt;-1&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;3.Linkages (fourbar &amp;amp; multilink) (四連桿與多連桿運動模擬)&lt;/p&gt;
+&lt;p&gt;&lt;img src="./../data/多連桿.jpg"width="800"/&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/199426708" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199426708"&gt;多連桿路徑&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="./../data/多連桿路徑.jpg"width="800"/&gt;&lt;/p&gt;
+&lt;h3&gt;solvespace作業組裝&lt;/h3&gt;
+&lt;p&gt;零件&lt;/p&gt;
+&lt;iframe src="./../data/洞洞方塊.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="./../data/連接桿.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;p&gt;組合圖&lt;/p&gt;
+&lt;iframe src="./../data/組合.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199433020" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199433020"&gt;方塊組合&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;3D印表機組裝&lt;/h3&gt;
+&lt;p&gt;零件&lt;/p&gt;
+&lt;iframe src="./../data/短桿.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="./../data/長桿.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="./../data/噴.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="./../data/底盤.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;p&gt;印表機&lt;/p&gt;
+&lt;iframe src="./../data/3D印表機.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;p&gt;組裝影片
+&lt;iframe src="https://player.vimeo.com/video/199425257" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/199425257"&gt;3DPR-1&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/199425269" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199425269"&gt;3DPR-2&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;onshape連桿組裝&lt;/h3&gt;
+&lt;iframe src="https://player.vimeo.com/video/199434782" width="640" height="307" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199434782"&gt;onshape連桿-1&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199434793" width="640" height="307" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199434793"&gt;onshape連桿-2&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="日常"></category></entry><entry><title>10/27四連桿</title><link href="./1027si-lian-gan.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423132</name></author><id>tag:,2016-10-06:./1027si-lian-gan.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;&lt;img src="./../w7/四連桿追蹤.jpg"width="800"/&gt;&lt;/p&gt;
 &lt;p&gt;Solvespace 四連桿圖&lt;/p&gt;
