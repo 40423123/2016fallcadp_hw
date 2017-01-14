@@ -316,13 +316,15 @@ init_mathjax();
                 </div>
                 <!-- PELICAN_END_SUMMARY -->
 
-<p><img src="./../data/23-1.jpg"width="800"/>
-<img src="./../data/23-2.jpg"width="800"/></p>
-<!-- 導入 brython.js -->
+<p><img src="./../data/四連桿追蹤.jpg"width="800"/></p>
+<p><img src="./../data/路徑表.jpg"width="800"/></p>
+<!-- 導入 Brython 標準程式庫 -->
 
-<script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"></script>
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
 
-<!-- 啟動 brython() -->
+<!-- 啟動 Brython -->
 
 <script>
 window.onload=function(){
@@ -330,7 +332,7 @@ brython(1);
 }
 </script>
 
-<!-- 以下利用 Brython 程式執行繪圖 -->
+<!-- 以下實際利用  Brython 畫兩條直線 -->
 
 <canvas id="fourbar" width="600" height="600"></canvas>
 
@@ -345,7 +347,7 @@ canvas = doc["fourbar"]
 container1 = doc['container1']
 ctx = canvas.getContext("2d")
 
-fourbar_data = open("./../data/23-1.csv").read()
+fourbar_data = open("./../w7/四連桿路徑.csv").read()
 fourbar_list = fourbar_data.splitlines()
 #container1 <= fourbar_list[0]
 # 以下可以利用 ctx 物件進行畫圖
