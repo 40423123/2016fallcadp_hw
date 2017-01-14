@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-10-06T11:00:00+08:00</updated><entry><title>11/17 路徑</title><link href="./1117-lu-jing.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1117-lu-jing.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-10-06T11:00:00+08:00</updated><entry><title>01/22電腦輔助設計課程總結</title><link href="./0122dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./0122dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;</summary><category term="日常"></category></entry><entry><title>10/27四連桿</title><link href="./1027si-lian-gan.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423132</name></author><id>tag:,2016-10-06:./1027si-lian-gan.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;&lt;a href="http://imgur.com/CXcehwx"&gt;&lt;img src="http://i.imgur.com/CXcehwx.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;p&gt;Solvespace 四連桿圖&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../w7/w7.csv"&gt; w7.csv&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../w7/w7.slvs"&gt;w7.slvs&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;&lt;/p&gt;</summary><category term="作業"></category></entry><entry><title>11/17 四連桿路徑與Brython</title><link href="./1117-si-lian-gan-lu-jing-yu-brython.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1117-si-lian-gan-lu-jing-yu-brython.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;&lt;img src="./../data/23-1.jpg"width="800"/&gt;
 &lt;img src="./../data/23-2.jpg"width="800"/&gt;&lt;/p&gt;
@@ -67,7 +72,7 @@ ctx.strokeStyle = "blue"
 # 實際執行畫線
 ctx.stroke()
 ctx.closePath()
-&lt;/script&gt;</summary><category term="日常"></category></entry><entry><title>11/24 軟體練習</title><link href="./1124-ruan-ti-lian-xi.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1124-ruan-ti-lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/script&gt;</summary><category term="日常"></category></entry><entry><title>11/24 Solvespace作業練習</title><link href="./1124-solvespacezuo-ye-lian-xi.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1124-solvespacezuo-ye-lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;sovlespace&lt;/h2&gt;
 &lt;h3&gt;1.parts(零件繪製)&lt;/h3&gt;
@@ -82,16 +87,75 @@ ctx.closePath()
 &lt;iframe src="./../data/2323-2.html"width="800"height="600"/&gt;&lt;/iframe&gt;
 
 &lt;h2&gt;Lathe (旋轉繞行長出或除料)&lt;/h2&gt;
-&lt;iframe src="./../data/2323-3.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+&lt;iframe src="./../data/甜甜圈.html"width="800"height="600"/&gt;&lt;/iframe&gt;
 
-&lt;h3&gt;2. Assembly (零件組立)&lt;/h3&gt;</summary><category term="日常"></category></entry><entry><title>12/01 組合圖</title><link href="./1201-zu-he-tu.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1201-zu-he-tu.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;iframe src="https://player.vimeo.com/video/199431202" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe src="./../data/1222.html"width="800"height="600"/&gt;&lt;/iframe&gt;</summary><category term="日常"></category></entry><entry><title>12/22 印表機</title><link href="./1222-yin-biao-ji.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1222-yin-biao-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;</summary><category term="日常"></category></entry><entry><title>四連桿</title><link href="./si-lian-gan.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423132</name></author><id>tag:,2016-10-06:./si-lian-gan.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/199431202"&gt;Untitled&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="http://imgur.com/CXcehwx"&gt;&lt;img src="http://i.imgur.com/CXcehwx.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;
-&lt;p&gt;Solvespace 四連桿圖&lt;/p&gt;
-&lt;p&gt;&lt;a href="./../w7/w7.csv"&gt; w7.csv&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;
-&lt;p&gt;&lt;a href="./../w7/w7.slvs"&gt;w7.slvs&lt;/a&gt; (請以滑鼠右鍵存檔)&lt;/p&gt;&lt;/p&gt;</summary><category term="作業"></category></entry><entry><title>40423123 筆記</title><link href="./40423123-bi-ji.html" rel="alternate"></link><updated>2016-09-02T12:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-09-02:./40423123-bi-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;iframe src="https://player.vimeo.com/video/199431219" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199431219"&gt;Untitled&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199431216" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199431216"&gt;Untitled&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;2. Assembly (零件組立)&lt;/h3&gt;
+&lt;iframe src="./../data/箱子組立.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199429872" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/199429872"&gt;-2&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/199429860" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/199429860"&gt;-1&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h3&gt;3.Linkages (fourbar &amp;amp; multilink) (四連桿與多連桿運動模擬)&lt;/h3&gt;
+&lt;p&gt;&lt;img src="./../data/多連桿.jpg"width="800"/&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/199426708" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199426708"&gt;多連桿路徑&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="./../data/多連桿路徑.jpg"width="800"/&gt;&lt;/p&gt;</summary><category term="日常"></category></entry><entry><title>12/01 Solvespace作業組合</title><link href="./1201-solvespacezuo-ye-zu-he.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1201-solvespacezuo-ye-zu-he.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h3&gt;零件&lt;/h3&gt;
+&lt;iframe src="./../data/洞洞方塊.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="./../data/連接桿.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;組合圖&lt;/h3&gt;
+&lt;iframe src="./../data/組合.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199433020" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199433020"&gt;方塊組合&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="日常"></category></entry><entry><title>12/22 印表機</title><link href="./1222-yin-biao-ji.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1222-yin-biao-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h3&gt;零件&lt;/h3&gt;
+&lt;iframe src="./../data/短桿.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="./../data/長桿.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="./../data/噴.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;iframe src="./../data/底盤.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;印表機&lt;/h3&gt;
+&lt;iframe src="./../data/3D印表機.html"width="800"height="600"/&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;組裝影片&lt;/h3&gt;
+&lt;p&gt;&lt;iframe src="https://player.vimeo.com/video/199425257" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/199425257"&gt;3DPR-1&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/199425269" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199425269"&gt;3DPR-2&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="日常"></category></entry><entry><title>12/29 onshape連桿組合</title><link href="./1229-onshapelian-gan-zu-he.html" rel="alternate"></link><updated>2016-10-06T11:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-10-06:./1229-onshapelian-gan-zu-he.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199434782" width="640" height="307" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199434782"&gt;onshape連桿-1&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/199434793" width="640" height="307" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/199434793"&gt;onshape連桿-2&lt;/a&gt; from &lt;a href="https://vimeo.com/user58788851"&gt;林嘉文&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="日常"></category></entry><entry><title>40423123 筆記</title><link href="./40423123-bi-ji.html" rel="alternate"></link><updated>2016-09-02T12:00:00+08:00</updated><author><name>40423123</name></author><id>tag:,2016-09-02:./40423123-bi-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;上課筆記&lt;/p&gt;
 
